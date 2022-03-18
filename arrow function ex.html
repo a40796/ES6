@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <script>
+        // callback function is fit in arrow function
+        document.querySelector('.box').addEventListener('click',function(){
+            let vm = this
+            setTimeout(function(){
+                console.log(vm)
+                vm.style.backgroundColor = "red";
+            })
+        })
+        document.querySelector('.box').addEventListener('click',function(){
+            setTimeout(()=>{
+                this.style.backgroundColor = 'red'
+            })
+        })
+
+        // simplify
+        let arrs = [2,3,4,7,5,32,344];
+        let result = arrs.filter(item => item % 2 === 0)
+        console.log(result)
+    </script>
+</body>
+</html>
