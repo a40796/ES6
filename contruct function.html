@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // create contructor function
+        // contructor is similar  with common function
+        // differance is contructor function's prefix is capital
+        // contrutor function use new keyword
+
+        //構造函示執行流程
+        // 1.創造object
+        // 2.將創造出來的函示 設置function中的this
+        // 3.執行程式
+        // 4.將obj return
+        // 5.使用相同的構造函示創造的obj為同一類
+        // 6.通過構造函示創造的obj稱之為實例
+
+        function Person(name,age,sex){
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+            this.sayName = fn;
+        }
+        function fn(){
+            console.log(this.name)
+        }
+        let albert = new Person('albert',29,'men');
+        let brain = new Person('brain',19,'men');
+        console.log(albert instanceof Person) // true
+        console.log(Person instanceof Object) // true
+        console.log(albert)
+        console.log(albert.sayName === brain.sayName);
+    </script>
+</body>
+</html>

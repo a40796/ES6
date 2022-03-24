@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Employee(name,age,sex,boss){
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+            this.boss = boss
+        }
+        let albert = new Employee('albert',28,'men','kaka');
+        let brain = new Employee('brain',22,'men','tank');
+        let lisa = new Employee('lisa',38,'women','kou');
+        Employee.prototype.myBoss = function(){
+            console.log(`${this.name} boss is ${this.boss}`)
+        }
+        // console.log(albert.myBoss())
+        // console.log(brain.myBoss())
+        // console.log(lisa.myBoss())
+       
+       function Myclass(name, age){
+            this.name = name;
+            this.age = age;
+       }
+       let duncan = new Myclass('duncan',28)
+       let john = new Myclass();
+       Myclass.prototype.name = 'albert';
+       console.log(john.__proto__.name)
+    //    console.log(Myclass.__proto__.__proto__.hasOwnProperty('hasOwnProperty'))
+    </script>
+</body>
+</html>

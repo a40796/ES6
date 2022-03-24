@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // use factory methods  === 
+        function createPerson(name,age,sex){
+            let obj = new Object()
+            obj.name = name;
+            obj.age = age;
+            obj.sex = sex;
+            return obj
+        }
+        let albert = createPerson('albert',28,'male')
+        let john = createPerson('john',18,'male')
+        let lisa = createPerson('lisa',48,'women')
+        // console.log(albert)
+        // console.log(john)
+        // console.log(lisa)
+    </script>
+</body>
+</html>
