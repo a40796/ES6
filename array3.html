@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Employee(name,age){
+            this.name = name;
+            this.age = age;
+        }
+        let employeeArrs = [];
+        let albert = new Employee('albert',28);
+        let brain = new Employee('brain',18);
+        let alan = new Employee('alan',48);
+        let ken = new Employee('ken',58);
+        employeeArrs.push(albert,brain,alan,ken);
+        let older = employeeArrs.filter((i)=>{
+              return i.age > 40
+        })
+
+    </script>
+</body>
+</html>

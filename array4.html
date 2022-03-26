@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove identical elements</title>
+</head>
+<body>
+    <script>
+        function Filter(arrs){
+            arrs.sort();
+            function filterData(){
+                arrs.forEach((value,index)=>{
+                if(value == arrs[index - 1]){
+                    arrs.splice(index - 1,1)
+                }
+            })
+                return arrs
+            }
+            if(filterData()){
+                return filterData()
+            }else{
+                return
+            }
+           
+            
+        }
+        let filterData = Filter([2,4,5,6,3,22,3,2,4,5,6,33,1,1,1,22,22]);
+        console.log(filterData)
+        
+    </script>
+</body>
+</html>

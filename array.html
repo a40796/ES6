@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+       //1.創造array obj
+        let arr = new Array();
+
+        //2.在array中添加元素
+        arr[0] = 10;
+        arr[1] = 12;
+        arr[2] = 22;
+        arr[3] = 33
+
+        //3.讀取array的元素
+        //讀取array中沒有的index 會回傳undefined
+        // console.log(arr[0])
+
+        //4.獲得array的長度( 元素的個數 )
+        //創造非連續的array.length = 最大的index + 1
+        arr[arr.length] = 77;
+        arr[arr.length] = 87;
+        arr[arr.length] = 97;
+        console.log(arr)
+
+
+
+
+
+
+    </script>
+</body>
+</html>
