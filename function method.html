@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //============ function methods call() apply() ===========
+        //使用call() apply() 都會呼叫function
+        //使用call() apply() 可以改變obj的this , 參數是誰 this 就是誰
+        //call() 可以在第一個參數 ，依序傳進function 
+        //apply() 需要用 [a,b] array 方式傳進
+
+        // ===== about this =====
+        // function呼叫 => window
+        // method 呼叫 => 呼叫的obj
+        // contructor function 呼叫 => 創造的obj
+        // call apply methods => 指定的obj
+
+        var name = 'window';
+        var obj = {
+            name:'obj',
+        }
+        function fun(a,b){
+            console.log(a,b)
+            console.log(this.name);
+        }
+         
+        // fun()
+        // fun.call(obj,1,2)
+        // fun.apply(obj,[1,2])
+
+
+    </script>
+</body>
+</html>
