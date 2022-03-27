@@ -8,7 +8,9 @@
 <body>
     <script>
         function Filter(arrs){
-            arrs.sort();
+            arrs.sort(function(a , b){
+                return a - b;
+            });
             function filterData(){
                 arrs.forEach((value,index)=>{
                 if(value == arrs[index - 1]){
