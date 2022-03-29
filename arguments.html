@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 呼叫function 連覽器會傳 1. this 2. arguments(很像array的obj) 兩個參數
+        function fun(){
+            // console.log(arguments instanceof Array) false
+            // console.log(arguments.callee === fun)  true
+        }
+        fun(1,2,3,4,5,6);
+    </script>
+</body>
+</html>

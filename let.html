@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let</title>
+</head>
+<body>
+    <script>
+        // 變量不能重複宣告
+        let a;
+        let b,c,d;
+        let e = 'albert' , f = 'brain';
+
+        // block 作用域
+        {
+            let g = 'ken'
+        }
+
+        // 沒有變量提升
+        // console.log(song) 會報錯
+        let song = 'aaaaa'
+
+        // 不影響作用域鏈
+
+        {
+            let country = 'taiwan';
+            function fn(){
+                // console.log(country)
+            }
+        }
+
+    </script>
+</body>
+</html>

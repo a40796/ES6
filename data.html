@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Date obj 
+
+        //create obj
+        let d = new Date(); // 程式執行的時間
+        // console.log('d', d)
+
+        // 指定時間   月份/日/年 時:分:秒
+        let d2 = new Date("03/27/2022 09:47:23")
+        // console.log('d2', d2)
+
+        // getDate()
+        let date = d2.getDate()
+        // console.log(date)
+
+        let day = d2.getDay()
+        // console.log(day)
+
+        // 0 => 1月
+        let month = d2.getMonth();
+        // console.log(month)
+
+        // 獲取年份
+        let year = d2.getFullYear();
+        // console.log(year)
+
+        //1970年1月1日 0:0:0 開始 到現在所花費的毫秒
+        let time = d2.getTime();
+        // console.log(time)
+
+        time = Date.now();
+        // console.log(time)
+
+        let start = Date.now();
+
+        for(let i=0 ; i<100 ; i++){
+            // console.log(i)
+        }
+
+        let end = Date.now();
+
+        console.log(end - start)
+
+
+
+    </script>
+</body>
+</html>

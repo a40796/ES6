@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 將基本數據類型 轉換成 obj 
+        var num = new Number(3);
+        var num2 = new Number(3)
+        var str = new String('hello');
+        var bool = new Boolean(true);
+        num.hello = 'abc';
+        console.log(num === num2) //false 因為存在記憶體不同位置
+
+        // 連覽器會先使用 new Number() 轉換成obj 在使用obj裡面的方法 toString()
+        var s = 123;
+        s = s.toString();
+        console.log(typeof s)
+
+
+    </script>
+</body>
+</html>
